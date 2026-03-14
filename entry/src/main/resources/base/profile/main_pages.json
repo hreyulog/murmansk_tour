@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/SightDetail/SightDetail",
+    "pages/EventDetail/EventDetail",
+    "pages/Infrastructure/InfrastructureList",
+    "pages/Transport/Transport",
+    "pages/Contact/Contact"
+  ]
+}

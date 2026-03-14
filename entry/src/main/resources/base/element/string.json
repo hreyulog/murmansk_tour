@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Murmansk Tourism Portal"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Explore Murmansk - Capital of the Russian Arctic"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Murmansk Tourism"
+    }
+  ]
+}
