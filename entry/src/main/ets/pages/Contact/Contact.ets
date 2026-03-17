@@ -1,10 +1,22 @@
 import { contactsData, Contact } from '../../models/DataModels'
 import router from '@ohos.router'
+import common from '@ohos.app.ability.common'
+import Want from '@ohos.app.ability.Want'
 
 @Entry
 @Component
 struct ContactPage {
   @State contacts: Contact[] = contactsData
+  context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
+
+  openLink(url: string) {
+    const want: Want = {
+      action: 'ohos.want.action.viewData',
+      entities: ['entity.system.browsable'],
+      uri: url
+    }
+    this.context.startAbility(want)
+  }
 
   build() {
     Column() {
@@ -94,14 +106,21 @@ struct ContactPage {
 
       if (contact.website) {
         Row() {
-          Text('Web: ' + contact.website)
-            .fontSize(13)
+          Text('Web: ')
+            .fontSize(14)
+            .fontColor('#666666')
+          Text(contact.website)
+            .fontSize(14)
             .fontColor('#007DFF')
             .maxLines(1)
             .textOverflow({ overflow: TextOverflow.Ellipsis })
+            .layoutWeight(1)
         }
         .width('100%')
         .margin({ top: 8 })
+        .onClick(() => {
+          this.openLink(contact.website!)
+        })
       }
     }
     .width('100%')

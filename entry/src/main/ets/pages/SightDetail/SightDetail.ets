@@ -1,5 +1,7 @@
 import { Sight, sightsData } from '../../models/DataModels'
 import router from '@ohos.router'
+import common from '@ohos.app.ability.common'
+import Want from '@ohos.app.ability.Want'
 
 interface SightDetailParams {
   sightId: string
@@ -10,6 +12,16 @@ interface SightDetailParams {
 struct SightDetail {
   @State sight: Sight | null = null
   @State isLoading: boolean = true
+  context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
+
+  openLink(url: string) {
+    const want: Want = {
+      action: 'ohos.want.action.viewData',
+      entities: ['entity.system.browsable'],
+      uri: url
+    }
+    this.context.startAbility(want)
+  }
 
   aboutToAppear() {
     const params = router.getParams() as SightDetailParams
@@ -115,6 +127,38 @@ struct SightDetail {
             .lineHeight(22)
             .margin({ top: 12 })
             .width('100%')
+
+          if (this.sight!.fullDescription) {
+            Text('More Information')
+              .fontSize(18)
+              .fontWeight(FontWeight.Bold)
+              .width('100%')
+              .margin({ top: 16 })
+
+            Text(this.sight!.fullDescription!)
+              .fontSize(14)
+              .fontColor('#333333')
+              .lineHeight(22)
+              .margin({ top: 12 })
+              .width('100%')
+          }
+
+          if (this.sight!.mapLink) {
+            Row() {
+              Text('View on Map')
+                .fontSize(14)
+                .fontColor(Color.White)
+                .padding({ left: 20, right: 20, top: 10, bottom: 10 })
+                .backgroundColor('#007DFF')
+                .borderRadius(20)
+            }
+            .width('100%')
+            .justifyContent(FlexAlign.Center)
+            .margin({ top: 20 })
+            .onClick(() => {
+              this.openLink(this.sight!.mapLink!)
+            })
+          }
         }
         .width('100%')
         .padding(16)

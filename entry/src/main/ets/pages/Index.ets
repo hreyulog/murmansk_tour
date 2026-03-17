@@ -442,7 +442,13 @@ struct Index {
     Scroll() {
       Column() {
         this.AboutSection()
-        this.MenuItem('Museums & Theatres', 'Explore cultural institutions', 'pages/Infrastructure/InfrastructureList')
+        this.MenuItem('Museums', 'Explore the museums of Murmansk', 'pages/Infrastructure/MuseumsPage')
+        this.MenuItem('Theatres', 'Theatres and cultural venues', 'pages/Infrastructure/TheatresPage')
+        this.MenuItem('Libraries', 'Public libraries in Murmansk', 'pages/Infrastructure/LibrariesPage')
+        this.MenuItem('Temples', 'Religious sites and temples', 'pages/Infrastructure/TemplesPage')
+        this.MenuItem('Cinemas', 'Cinema theaters in Murmansk', 'pages/Infrastructure/CinemasPage')
+        this.MenuItem('Exhibition Halls', 'Art and exhibition spaces', 'pages/Infrastructure/ExhibitionHallsPage')
+        this.MenuItem('Houses of Culture', 'Cultural centers and palaces', 'pages/Infrastructure/CultureHousesPage')
         this.MenuItem('Transport', 'How to arrive in Murmansk', 'pages/Transport/Transport')
         this.MenuItem('Contacts', 'Official contact information', 'pages/Contact/Contact')
       }

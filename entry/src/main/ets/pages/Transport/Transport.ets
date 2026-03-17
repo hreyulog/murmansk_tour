@@ -1,5 +1,7 @@
 import { transportInfo } from '../../models/DataModels'
 import router from '@ohos.router'
+import common from '@ohos.app.ability.common'
+import Want from '@ohos.app.ability.Want'
 
 interface HighwayItem {
   name: string
@@ -16,6 +18,16 @@ interface CrossingItem {
 struct Transport {
   @State highways: HighwayItem[] = transportInfo.highways
   @State crossings: CrossingItem[] = transportInfo.borderCrossings
+  context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
+
+  openLink(url: string) {
+    const want: Want = {
+      action: 'ohos.want.action.viewData',
+      entities: ['entity.system.browsable'],
+      uri: url
+    }
+    this.context.startAbility(want)
+  }
 
   build() {
     Column() {
@@ -73,7 +85,7 @@ struct Transport {
         .fontWeight(FontWeight.Bold)
         .width('100%')
 
-      this.InfoCard(transportInfo.airport.name, transportInfo.airport.address, transportInfo.airport.phone)
+      this.InfoCard(transportInfo.airport.name, transportInfo.airport.address, transportInfo.airport.phone, transportInfo.airport.website)
     }
     .width('100%')
     .padding(16)
@@ -90,7 +102,7 @@ struct Transport {
         .fontWeight(FontWeight.Bold)
         .width('100%')
 
-      this.InfoCard(transportInfo.railway.name, transportInfo.railway.address, undefined)
+      this.InfoCard(transportInfo.railway.name, transportInfo.railway.address, undefined, transportInfo.railway.website)
 
       Text('Direct railway link from Murmansk to St. Petersburg, Vologda, Moscow, Minsk, and many other cities.')
         .fontSize(13)
@@ -176,7 +188,7 @@ struct Transport {
   }
 
   @Builder
-  InfoCard(name: string, address: string, phone?: string) {
+  InfoCard(name: string, address: string, phone?: string, website?: string) {
     Column() {
       Text(name)
         .fontSize(15)
@@ -194,6 +206,18 @@ struct Transport {
           .fontSize(13)
           .fontColor('#007DFF')
           .margin({ top: 4 })
+      }
+
+      if (website) {
+        Text('Website: ' + website)
+          .fontSize(13)
+          .fontColor('#007DFF')
+          .maxLines(1)
+          .textOverflow({ overflow: TextOverflow.Ellipsis })
+          .margin({ top: 4 })
+          .onClick(() => {
+            this.openLink(website)
+          })
       }
     }
     .width('100%')

@@ -84,7 +84,8 @@ export const sightsData: Sight[] = [
     description: 'Location - Murmansk city, Green Cape Hill. From the first days of the opening of the memorial "Alyosha" became a place of worship for the heroic defenders of the Soviet Arctic.',
     location: 'Murmansk city, Green Cape Hill',
     address: 'Green Cape Hill, Murmansk',
-    mapLink: 'https://yandex.ru/maps/-/CVrwNXn~'
+    mapLink: 'https://yandex.ru/maps/-/CVrwRV~i',
+    fullDescription: 'From the first days of the opening of the memorial people in Murmansk lovingly called him "Murmansk Alyosha", because the main figure of the memorial is the figure of a warrior, a soldier. Memorial was opened on 19 October 1974 at the Green Cape Hill (architect I. A. Pokrovsky, sculptor I. D. Brodsky). Statue of a soldier stands on a seven-meter pedestal, the total height of the monument is 31.5 meters, and the weight is more than 5000 tons.'
   },
   {
     id: '2',
@@ -92,7 +93,9 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/2/3-58ddefc1.jpg',
     description: 'Location – Murmansk city, descent between Chelyuskintsev Street and Geroev Severomortsev Avenue.',
     location: 'Chelyuskintsev Street and Geroev Severomortsev Avenue',
-    address: 'Chelyuskintsev Street, Murmansk'
+    address: 'Chelyuskintsev Street, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVrwa-3-',
+    fullDescription: 'The memorial complex "To the sailors who died in peacetime" is called a lighthouse by locals. One of the most beautiful places in the city, with a wonderful view of the Kola Bay. The memorial was opened on October 5, 2002, for City Day. The architectural dominant of the memorial complex is a hexagonal lighthouse tower 17.5 meters high.'
   },
   {
     id: '3',
@@ -100,7 +103,9 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/3/1-9e5308bc.jpg',
     description: 'Location – Murmansk, descent between Chelyuskintsev Street and Geroev Severomortsev Avenue. It is the tallest Orthodox church in the world located north of the Arctic Circle.',
     location: 'Chelyuskintsev Street, Murmansk',
-    address: 'Chelyuskintsev Street, Murmansk'
+    address: 'Chelyuskintsev Street, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVrweG5d',
+    fullDescription: 'It is difficult to imagine Murmansk, a port city, without a church that would be connected to the sea. Spas-na-Vodakh was consecrated before City Day, on October 3, 2002. It became the third stone church in Murmansk after the St. Nicholas and Vladimir churches.'
   },
   {
     id: '4',
@@ -109,8 +114,8 @@ export const sightsData: Sight[] = [
     description: 'Location - Murmansk city, Portovy Passage, 25. The world\'s first nuclear-powered icebreaker, now a museum ship.',
     location: 'Portovy Passage, 25',
     address: 'Portovy Passage, 25, Murmansk',
-    mapLink: 'https://yandex.ru/maps/-/CVrXj-3J',
-    fullDescription: 'The nuclear icebreaker Lenin was built in one year and launched in 1957 at the Marti shipyard in Leningrad. It was the world\'s first surface vessel with a nuclear power plant. Today, the nuclear icebreaker Lenin is a museum and the only cultural heritage site of federal significance in Murmansk.'
+    mapLink: 'https://yandex.ru/maps/-/CVrweR3x',
+    fullDescription: 'The nuclear icebreaker Lenin was built in one year and launched in 1957 at the Marti shipyard in Leningrad. It was the world\'s first surface vessel with a nuclear power plant. The icebreaker "Lenin" worked for 30 years and in 1989 was decommissioned. Today, the nuclear icebreaker Lenin is a museum and the only cultural heritage site of federal significance in Murmansk.'
   },
   {
     id: '5',
@@ -118,7 +123,8 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/4/drama-8f3ad627.jpg',
     description: 'Location – Murmansk city, Lenin Ave, 49. The Murmansk Regional Drama Theatre was founded in 1946.',
     location: 'Lenin Ave, 49',
-    address: 'Lenin Ave, 49, Murmansk'
+    address: 'Lenin Ave, 49, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVr9E-1m'
   },
   {
     id: '6',
@@ -143,15 +149,17 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/4/kursk-327a6008.jpg',
     description: 'Location – Murmansk city. Cabin of NPS «Kursk» memorial dedicated to the submariners who died in peacetime.',
     location: 'Chelyuskintsev Street, Murmansk',
-    address: 'Chelyuskintsev Street, Murmansk'
+    address: 'Chelyuskintsev Street, Murmansk',
+    fullDescription: 'On June 15, 2009, the conning tower of the nuclear submarine Kursk was installed next to the lighthouse, which became a monument to submariners who died in peacetime. The names of 33 submarines on which sailors died in peacetime are written next to the conning tower.'
   },
   {
     id: '9',
     name: 'Drama Theatre of the Northern Fleet',
     image: 'https://tour.citymurmansk.ru/img/210x157/3/117292e8bea-4164399a.jpg',
     description: 'Location – Murmansk city, Kolsky Avenue, 136. The first location of the theater was the House of the Red Army.',
-    location: 'Kolsky Avenue, 136',
-    address: 'Kolsky Avenue, 136, Murmansk'
+    location: 'Kolsky Avenue, 186',
+    address: 'Kolsky Avenue, 186, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVr9IA7i'
   },
   {
     id: '10',
@@ -175,7 +183,8 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/e/puppettheatre-e9406491.jpg',
     description: 'Location - Murmansk, Lenin Avenue, 27. Murmansk Regional Puppet Theater was founded on April 13, 1933.',
     location: 'Lenin Avenue, 27',
-    address: 'Lenin Avenue, 27, Murmansk'
+    address: 'Lenin Avenue, 27, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CCUyuHHQtA'
   },
   {
     id: '13',
@@ -200,7 +209,8 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/e/zhduschaya-f7735ca9.jpg',
     description: 'Location – Murmansk city, near Chumbarov-Luchinsky Street, 40. Unveiling of the monument has been held on July 3, 2012.',
     location: 'Chumbarov-Luchinsky Street, 40',
-    address: 'Chumbarov-Luchinsky Street, 40, Murmansk'
+    address: 'Chumbarov-Luchinsky Street, 40, Murmansk',
+    fullDescription: 'In October 2, 2013 in Murmansk was opened a monument to Cat Semyon, who for more than 6 years was travelling home from Moscow to Murmansk to its owners. The memory of his odyssey is a symbol of devotion of pets to their owners.'
   },
   {
     id: '16',
@@ -208,7 +218,9 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/1/bredov-ee561c69.jpg',
     description: 'Location – Murmansk, crossroads of Lenin Avenue and Profsoyuzov street. On May 9, 1964, the bust of A. Bredov was solemnly opened.',
     location: 'Lenin Avenue and Profsoyuzov street',
-    address: 'Lenin Avenue, Murmansk'
+    address: 'Lenin Avenue, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVrwRMi1',
+    fullDescription: 'On May 9, 1958 at the crossroads of Lenin Avenue and Profsoyuzov street a monument to the Hero of the Soviet Union, citizen of Murmansk Anatoly Bredov was opened. The three-meter bronze statue depicts a soldier in the moment of highest tension of all his spiritual and physical strength.'
   },
   {
     id: '17',
@@ -217,7 +229,8 @@ export const sightsData: Sight[] = [
     description: 'Location - Murmansk, Lenin Avenue, 90. The oldest museum of the Murmansk region, founded in 1926.',
     location: 'Lenin Avenue, 90',
     address: 'Lenin Avenue, 90, Murmansk',
-    mapLink: 'https://yandex.ru/maps/-/CCUyuDTX2A'
+    mapLink: 'https://yandex.ru/maps/-/CCUyuDTX2A',
+    fullDescription: 'The oldest museum of the Murmansk region, founded in 1926. Located in the building is a historical monument of the city. Engaged in acquisition, storage, popularization of historical and cultural monuments of the Murmansk region. Has 17 exposition halls.'
   },
   {
     id: '18',
@@ -225,7 +238,8 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/2/5da900-ef31f73d.jpg',
     description: 'Location – Murmansk, territory of park «Semenovskoe Lake». In October 2, 2013 in Murmansk, a monument to the cat Semyon was opened.',
     location: 'Semenovskoe Lake Park',
-    address: 'Semenovskoe Lake Park, Murmansk'
+    address: 'Semenovskoe Lake Park, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVrwR46M'
   },
   {
     id: '19',
@@ -233,7 +247,9 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/2/20e342b-bf7cbba2.jpg',
     description: 'Location – Murmansk, the square near Murmansk Regional Drama Theatre.',
     location: 'Near Drama Theatre, Murmansk',
-    address: 'Lenin Ave, 49, Murmansk'
+    address: 'Lenin Ave, 49, Murmansk',
+    mapLink: 'https://yandex.ru/maps/-/CVrwRBNE',
+    fullDescription: 'The author of monument to the frontier guards of the Arctic was an honored Russian sculptor Ivan Melnikov from Smolensk. A border sign rises above the pedestal that symbolises the harsh northern cliffs. Around it three frontier guards froze guarding the land, sea and air borders.'
   },
   {
     id: '20',
@@ -241,7 +257,9 @@ export const sightsData: Sight[] = [
     image: 'https://tour.citymurmansk.ru/img/210x157/1/-4e323476.jpg',
     description: 'The Murmansk Commercial Sea Port occupies a special place in the history of the development of the Northern Sea Route.',
     location: 'Portovy Ave., 19A',
-    address: 'Portovy Ave., 19A, Murmansk'
+    address: 'Portovy Ave., 19A, Murmansk',
+    mapLink: 'https://yandex.ru/maps/org/muzey_murmanskogo_morskogo_torgovogo_porta/8258676812',
+    fullDescription: 'The Murmansk Commercial Sea Port occupies a special place in the history of the Kola Polar Region. The creation of the Museum of the History of the Murmansk Commercial Sea Port was timed to coincide with the 100th anniversary.'
   }
 ]
 
@@ -452,20 +470,252 @@ export const theatresData: Infrastructure[] = [
     id: 't1',
     name: 'Murmansk Regional Drama Theatre',
     type: 'theatre',
-    address: 'Murmansk, Lenin Ave, 49'
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/театры/1_e6cff_9e058.jpg',
+    address: 'Murmansk, Lenin Ave, 49',
+    phone: '+7 (8152) 40-82-02',
+    website: 'https://modt.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CVr9E-1m'
   },
   {
     id: 't2',
     name: 'Drama Theatre of the Northern Fleet',
     type: 'theatre',
-    address: 'Murmansk, Kolsky Avenue, 136'
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/театры/117292_4ba46.jpg',
+    address: 'Murmansk, Kolsky Avenue, 186',
+    phone: '(8152) 52-80-93',
+    website: 'https://teatrsf.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CVr9IA7i'
   },
   {
     id: 't3',
     name: 'Murmansk Regional Puppet Theatre',
     type: 'theatre',
+    image: 'https://tour.citymurmansk.ru/images/infra/puppet_theatre.jpg',
     address: 'Murmansk, Lenin Avenue, 27',
-    website: 'https://murmankukla.ru/'
+    phone: '+7 (8152) 40-30-36',
+    website: 'https://www.murmankukla.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CCUyuHHQtA'
+  },
+  {
+    id: 't4',
+    name: 'Children\'s Theater School of Murmansk',
+    type: 'theatre',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/театры/1_da1df7ca8095_caf96.jpg',
+    address: 'Murmansk, Lenin Avenue, 16',
+    phone: '(8152) 25-57-71',
+    website: 'https://dtsh.murm.muzkult.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CCUyuHTjcD'
+  },
+  {
+    id: 't5',
+    name: 'Murmansk Regional Philharmonic',
+    type: 'theatre',
+    image: 'https://tour.citymurmansk.ru/images/infra/dk/filarmoniya.jpg',
+    address: 'Murmansk, Sofia Perovskaya Street, 3',
+    phone: '8(8152) 99-43-33',
+    website: 'https://murmansound.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CCUyuHX3pA'
+  }
+]
+
+export const librariesData: Infrastructure[] = [
+  {
+    id: 'lib1',
+    name: 'Murmansk State Regional Universal Scientific Library',
+    type: 'library',
+    image: 'https://tour.citymurmansk.ru/images/Научная_89b6d.jpg',
+    address: 'Murmansk, Sophia Perovskaya str., 21A',
+    phone: '(8152) 45-08-58',
+    website: 'http://www.mgounb.ru',
+    mapLink: 'https://yandex.ru/maps/-/CVr1ZV65'
+  },
+  {
+    id: 'lib2',
+    name: 'Central City Library of Murmansk',
+    type: 'library',
+    image: 'https://tour.citymurmansk.ru/images/Центр_Городская_690e8.jpg',
+    address: 'Murmansk, Kolsky Ave., 93',
+    phone: '(8152) 53-87-67',
+    website: 'https://murmanlib.ru',
+    mapLink: 'https://yandex.ru/maps/-/CVr1ZZiI'
+  },
+  {
+    id: 'lib3',
+    name: 'Central Children\'s Library of Murmansk',
+    type: 'library',
+    image: 'https://tour.citymurmansk.ru/images/Центр_Детская_7f8c1.jpg',
+    address: 'Murmansk, Bering str., 28',
+    phone: '(8152) 45-24-79',
+    website: 'http://cdb-murmansk.ru',
+    mapLink: 'https://yandex.ru/maps/-/CVr1Z6Mp'
+  },
+  {
+    id: 'lib4',
+    name: 'Murmansk Regional Children and Youth Library named after V.P. Mahaeva',
+    type: 'library',
+    image: 'https://tour.citymurmansk.ru/images/infra/modub.jpg',
+    address: '183025, Murmansk, Captain Burkova str., 30',
+    phone: '(8152) 44-73-37',
+    website: 'https://www.libkids51.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CDBWqZyZ'
+  }
+]
+
+export const templesData: Infrastructure[] = [
+  {
+    id: 'tmp1',
+    name: 'Church of the Savior on the Waters (Spaso-Preobrazhensky Naval Cathedral)',
+    type: 'temple',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/храмы/image004_d3415.jpg',
+    address: 'Murmansk, Geroev-Severomortsev Ave., 1',
+    phone: '(8152) 43-87-83',
+    mapLink: 'https://yandex.ru/maps/-/CVr9MKL7'
+  },
+  {
+    id: 'tmp2',
+    name: 'St. Nicholas Cathedral',
+    type: 'temple',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/храмы/image001_49634.jpg',
+    address: 'Murmansk, Zelenaya Street, 11',
+    phone: '(8152) 25-08-16',
+    mapLink: 'https://yandex.ru/maps/-/CVr9IJ9w'
+  },
+  {
+    id: 'tmp3',
+    name: 'Trifonov Compound of the Pechenga Monastery',
+    type: 'temple',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/храмы/image009_04119.jpg',
+    address: 'Murmansk, Kooperativnaya, 32',
+    phone: '(8152) 25-44-04',
+    mapLink: 'https://yandex.ru/maps/-/CVr9M0iP'
+  }
+]
+
+export const cinemasData: Infrastructure[] = [
+  {
+    id: 'cin1',
+    name: 'Cinema "Murmansk"',
+    type: 'cinema',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/кинотеатры/К_мурманск_a2ce8.jpg',
+    address: '183025, Murmansk, Pojarnie Zori str., 51/33',
+    phone: '+7 (8152) 44-05-66',
+    website: 'https://ktm.kinovmurmanske.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CVr16AJp'
+  },
+  {
+    id: 'cin2',
+    name: 'Cinema "Aurora"',
+    type: 'cinema',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/кинотеатры/Аврора_14b20.jpg',
+    address: '183038, Murmansk, Nakhimov str., 21',
+    phone: '+7 (8152) 22-99-59',
+    website: 'https://aurora.kinovmurmanske.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CVr16E~9'
+  },
+  {
+    id: 'cin3',
+    name: 'Mirage Cinema (Severnoe Nagornoe)',
+    type: 'cinema',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/кинотеатры/К_мираж_d31ea.jpg',
+    address: '183025, Murmansk, Kolsky ave, 158/1 (Mall "Severnoe Nagornoe")',
+    phone: '8(800) 505-17-85',
+    website: 'https://www.mirage.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CVr16Z~7'
+  },
+  {
+    id: 'cin4',
+    name: 'Mirage Cinema (Murmansk Mall)',
+    type: 'cinema',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/кинотеатры/siyanie.jpg',
+    address: 'Murmansk, Lenin ave, 32 (Murmansk Mall, 4th floor)',
+    website: 'https://www.mirage.ru/',
+    mapLink: 'https://maps.yandex.ru/-/CVDkUSik'
+  },
+  {
+    id: 'cin5',
+    name: 'Cinema "Galaktika Lumen"',
+    type: 'cinema',
+    image: 'https://tour.citymurmansk.ru/images/infra/galaktika.jpg',
+    address: 'Murmansk, Rogozerskaya Street, 4 (TRC "PLAZMA", 2 floor)',
+    phone: '+7 (909) 786-10-65',
+    website: 'https://lumenfilm.com/murmansk',
+    mapLink: 'https://yandex.ru/profile/55195424513'
+  }
+]
+
+export const exhibitionHallsData: Infrastructure[] = [
+  {
+    id: 'exh1',
+    name: 'Murmansk Exhibition Hall',
+    type: 'exhibition',
+    image: 'https://tour.citymurmansk.ru/images/выставочный_зал_d28d4.jpg',
+    address: '183038, Murmansk, Oktyabr\'skaya str., 22',
+    phone: '(8152) 42-86-68',
+    website: 'https://v-zal.murm.muzkult.ru',
+    mapLink: 'https://yandex.ru/maps/-/CCUyaLbbTC'
+  }
+]
+
+export const cultureHousesData: Infrastructure[] = [
+  {
+    id: 'ch1',
+    name: 'Murmansk Regional Palace of Culture named after Kirov',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/Кировка_21632.jpg',
+    address: '183038, Murmansk, Pushkinskaya str., 3',
+    phone: '(8152) 45-43-23',
+    website: 'http://www.odkkirova.ru',
+    mapLink: 'https://maps.yandex.ru/-/CVr1F-IB'
+  },
+  {
+    id: 'ch2',
+    name: 'Murmansk Regional Center for Supplementary Education "Laplandia"',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/Лопландия_9a35e.jpg',
+    address: '183031, Murmansk, Geroev Severomortsev str., 2',
+    phone: '(8152) 43-49-69',
+    website: 'https://www.laplandiya.org',
+    mapLink: 'https://maps.yandex.ru/-/CVr1JFmU'
+  },
+  {
+    id: 'ch3',
+    name: 'House of Culture of Pervomaisky District',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/dk-pervomay.jpg',
+    address: '183008, Murmansk, Zoya Kosmodemyanskaya str., 2a',
+    phone: '(8152) 24-57-34',
+    website: 'https://dk-1may.murm.muzkult.ru/',
+    mapLink: 'https://maps.yandex.ru/-/CVr1JS2C'
+  },
+  {
+    id: 'ch4',
+    name: 'House of Culture of Lenin District',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/Ленинский_45074.jpg',
+    address: '183017, Murmansk, Admiral Lobov str., 47',
+    phone: '(8152) 24-26-86',
+    website: 'http://dklen.ru',
+    mapLink: 'https://maps.yandex.ru/-/CVr1J4j0'
+  },
+  {
+    id: 'ch5',
+    name: 'House of Culture "Mayak"',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/Маяк_3e32a.jpg',
+    address: '183038, Murmansk, Lesnaya str., 39',
+    phone: '+7 (8152) 47-95-89',
+    website: 'https://dk-1may.murm.muzkult.ru/',
+    mapLink: 'https://maps.yandex.ru/-/CVr1J8oy'
+  },
+  {
+    id: 'ch6',
+    name: 'Palace of Culture "Sudoremontnik"',
+    type: 'culture_palace',
+    image: 'https://tour.citymurmansk.ru/images/инфраструктура/дома_культуры/sudorem.jpg',
+    address: '184635, Murmansk, residential area Roslyakovo, Zavodskaya St., 1',
+    phone: '(8152) 47-15-22',
+    website: 'https://dk-sudrem.murm.muzkult.ru/',
+    mapLink: 'https://yandex.ru/maps/-/CLhIjNze'
   }
 ]
 
@@ -489,6 +739,11 @@ export const contactsData: Contact[] = [
     phone: '(8152) 45-02-69',
     email: 'ekonomika@citymurmansk.ru',
     website: 'https://yandex.ru/maps/-/CVrL4P-Y'
+  },
+  {
+    organization: 'Department of Entrepreneurship and Tourism Development',
+    address: 'Murmansk, Lenin Ave, 87',
+    phone: '(8152) 45-94-75'
   }
 ]
 

@@ -1,16 +1,11 @@
-import { Infrastructure, InfrastructureType, museumsData, theatresData, librariesData, templesData } from '../../models/DataModels'
+import { Infrastructure, librariesData } from '../../models/DataModels'
 import router from '@ohos.router'
 import common from '@ohos.app.ability.common'
 import Want from '@ohos.app.ability.Want'
 
 @Entry
 @Component
-struct InfrastructureList {
-  @State currentType: InfrastructureType = 'museum'
-  @State museums: Infrastructure[] = museumsData
-  @State theatres: Infrastructure[] = theatresData
-  @State libraries: Infrastructure[] = librariesData
-  @State temples: Infrastructure[] = templesData
+struct LibrariesPage {
   context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
 
   openLink(url: string) {
@@ -22,26 +17,19 @@ struct InfrastructureList {
     this.context.startAbility(want)
   }
 
-  getCurrentData(): Infrastructure[] {
-    switch (this.currentType) {
-      case 'museum':
-        return this.museums
-      case 'theatre':
-        return this.theatres
-      case 'library':
-        return this.libraries
-      case 'temple':
-        return this.temples
-      default:
-        return this.museums
-    }
-  }
-
   build() {
     Column() {
       this.Header()
-      this.TypeSelector()
-      this.ContentList()
+      List({ space: 12 }) {
+        ForEach(librariesData, (item: Infrastructure) => {
+          ListItem() {
+            this.InfrastructureCard(item)
+          }
+        }, (item: Infrastructure) => item.id)
+      }
+      .width('100%')
+      .layoutWeight(1)
+      .padding({ left: 16, right: 16, bottom: 16 })
     }
     .width('100%')
     .height('100%')
@@ -63,9 +51,10 @@ struct InfrastructureList {
         router.back()
       })
 
-      Text('Cultural Institutions')
+      Text('Libraries')
         .fontSize(20)
         .fontWeight(FontWeight.Bold)
+        .fontColor(Color.White)
         .layoutWeight(1)
         .margin({ left: 12 })
     }
@@ -73,54 +62,6 @@ struct InfrastructureList {
     .height(56)
     .padding({ left: 16, right: 16 })
     .backgroundColor('#007DFF')
-  }
-
-  @Builder
-  TypeSelector() {
-    Scroll() {
-      Row() {
-        this.TypeButton('Museums', 'museum')
-        Blank().width(8)
-        this.TypeButton('Theatres', 'theatre')
-        Blank().width(8)
-        this.TypeButton('Libraries', 'library')
-        Blank().width(8)
-        this.TypeButton('Temples', 'temple')
-      }
-      .padding(16)
-    }
-    .scrollable(ScrollDirection.Horizontal)
-    .scrollBar(BarState.Off)
-    .width('100%')
-    .backgroundColor(Color.White)
-  }
-
-  @Builder
-  TypeButton(label: string, type: InfrastructureType) {
-    Text(label)
-      .fontSize(14)
-      .fontWeight(this.currentType === type ? FontWeight.Bold : FontWeight.Normal)
-      .fontColor(this.currentType === type ? '#007DFF' : '#666666')
-      .padding({ left: 16, right: 16, top: 10, bottom: 10 })
-      .backgroundColor(this.currentType === type ? '#E6F2FF' : '#F5F5F5')
-      .borderRadius(20)
-      .onClick(() => {
-        this.currentType = type
-      })
-  }
-
-  @Builder
-  ContentList() {
-    List({ space: 12 }) {
-      ForEach(this.getCurrentData(), (item: Infrastructure) => {
-        ListItem() {
-          this.InfrastructureCard(item)
-        }
-      }, (item: Infrastructure) => item.id)
-    }
-    .width('100%')
-    .layoutWeight(1)
-    .padding({ left: 16, right: 16, bottom: 16 })
   }
 
   @Builder
