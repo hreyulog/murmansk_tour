@@ -4,6 +4,13 @@
     "pages/SightDetail/SightDetail",
     "pages/EventDetail/EventDetail",
     "pages/Infrastructure/InfrastructureList",
+    "pages/Infrastructure/MuseumsPage",
+    "pages/Infrastructure/TheatresPage",
+    "pages/Infrastructure/LibrariesPage",
+    "pages/Infrastructure/TemplesPage",
+    "pages/Infrastructure/CinemasPage",
+    "pages/Infrastructure/ExhibitionHallsPage",
+    "pages/Infrastructure/CultureHousesPage",
     "pages/Transport/Transport",
     "pages/Contact/Contact"
   ]
